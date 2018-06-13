@@ -18,3 +18,5 @@ typings/
 .npm
 .eslintcache
 *.tgz
+
+dist/

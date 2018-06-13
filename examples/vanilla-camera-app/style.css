@@ -1,0 +1,52 @@
+body,
+html {
+  background: #f2f2f2;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background: #ffffff;
+  box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.1);
+
+  bottom: 0;
+  flex: 0 0 120px;
+  height: 120px;
+  margin-top: auto;
+  width: 100%;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.record-stop-btn {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(to right, #ed213a, #93291e);
+  border: none;
+}
+
+.record-stop-btn.record {
+  border-radius: 50%;
+}
+
+.record-stop-btn.stop {
+  border-radius: 2px;
+}
+
+#camera {
+  width: auto;
+  background: black;
+  flex: 1;
+  margin: 0;
+}

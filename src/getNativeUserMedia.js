@@ -30,7 +30,7 @@ function _findCameraDeviceByPanelAsync(panel) {
         myDeviceInfo = devices.getAt(0);
       }
       console.log("[STATUS]", "fallback to camera: " + myDeviceInfo.name);
-      return deviceInfo;
+      return myDeviceInfo;
     });
 }
 
@@ -46,7 +46,7 @@ function _findCameraDeviceByPanelAsync(panel) {
  */
 function getNativeUserMedia(/* ignored for now */ options) {
   let panel = Windows.Devices.Enumeration.Panel.back;
-  _findCameraDeviceByPanelAsync(panel)
+  return _findCameraDeviceByPanelAsync(panel)
     .then(panel)
     .then(myDeviceInfo => {
       let captureModes = Windows.Media.Capture.StreamingCaptureMode;
@@ -65,12 +65,12 @@ function getNativeUserMedia(/* ignored for now */ options) {
       settings.streamingCaptureMode = captureModes.audioAndVideo;
 
       return new Promise((resolve, reject) => {
-        return _mediaCapture
-          .initializeAsync(settings)
-          .then(() => {
+        return _mediaCapture.initializeAsync(settings).then(
+          () => {
             return resolve(_mediaCapture);
-          })
-          .catch(err => reject(err));
+          },
+          err => reject(err)
+        );
       });
     });
 }

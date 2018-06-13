@@ -11,9 +11,10 @@ function MediaRecorder(stream, options) {
   this.state = STATES.inactive;
 }
 
+// TODO: explain
 MediaRecorder.prototype._getStorageFile = function() {
   let captureFolder = null;
-  let storageLibrary = Windows.Storage.StorageLibrary.getLibraryAsync;
+  let storageLibrary = Windows.Storage.StorageLibrary;
   let knownPictureLibrary = Windows.Storage.KnownLibraryId.pictures;
   return storageLibrary
     .getLibraryAsync(knownPictureLibrary)
@@ -27,9 +28,10 @@ MediaRecorder.prototype._getStorageFile = function() {
       );
     });
 };
-
+// TODO: explain
 MediaRecorder.prototype.start = function() {
   this._getStorageFile().then(file => {
+    console.log("inside start");
     let encodingProfile = Windows.Media.MediaProperties.MediaEncodingProfile.createMp4(
       Windows.Media.MediaProperties.VideoEncodingQuality.auto
     );
@@ -41,7 +43,7 @@ MediaRecorder.prototype.start = function() {
       });
   });
 };
-
+// TODO: explain
 MediaRecorder.prototype.stop = function() {
   this.nativeMediaStream.stopRecordAsync().then(() => {
     this.state = STATES.inactive;
@@ -53,7 +55,7 @@ MediaRecorder.prototype.pause = function() {
     this.state = STATES.paused;
   });
 };
-
+// TODO: explain
 MediaRecorder.prototype.resume = function() {
   this.nativeMediaStream.resumeRecordAsync().then(() => {
     this.state = STATES.recording;
