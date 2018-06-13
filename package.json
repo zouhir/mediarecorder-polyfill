@@ -1,0 +1,26 @@
+{
+  "name": "mediarecorder-polyfill",
+  "version": "0.1.0",
+  "description": "Polyfilling MediaRecorder API on Edge PWA",
+  "main": "dist/mediarecorder-polyfill.js",
+  "umd:main": "dist/mediarecorder-polyfill.umd.js",
+  "module": "dist/mediarecorder-polyfill.m.js",
+  "source": "src/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "microbundle": "^0.4.4"
+  },
+  "scripts": {
+    "build": "microbundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zouhir/mediarecorder-polyfill.git"
+  },
+  "author": "Zouhir Chahoud",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zouhir/mediarecorder-polyfill/issues"
+  },
+  "homepage": "https://github.com/zouhir/mediarecorder-polyfill#readme"
+}
