@@ -47,7 +47,7 @@ navigator.mediaDevices
 
 #### Navigator.getNativeUserMedia
 
-- [ x ] returns promise with stream
+- [x] returns promise with stream
 
 - [ ] accepts mimeType option
 
@@ -57,17 +57,17 @@ navigator.mediaDevices
 
 #### Media Recorder: Methods
 
-- [ x ] mediaRecorder.play()
+- [x] mediaRecorder.play()
 
-- [ x ] mediaRecorder.pause()
+- [x] mediaRecorder.pause()
 
-- [ x ] mediaRecorder.resume()
+- [x] mediaRecorder.resume()
 
-- [ x ] mediaRecorder.stop()
+- [x] mediaRecorder.stop()
 
 #### Media Recorder: properties
 
-- [ x ] mediaRecorder.state
+- [x] mediaRecorder.state
 
 - [ ] mediaRecorder.onplay
 
