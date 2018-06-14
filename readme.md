@@ -1,5 +1,19 @@
 # MediaRecoder API Edge PWAs Polyfill
 
+## Demo of Vanilla JavaScript Example Recorderd in Edge
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/zouhir/mediarecorder-polyfill/master/.github/demo1.PNG" width="80%">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/zouhir/mediarecorder-polyfill/master/.github/demo2.PNG" width="80%">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/zouhir/mediarecorder-polyfill/master/.github/demo3.PNG" width="80%">
+</p>
+
 ## The Problem
 
 Since FireFox and Chrome has already shipped [MediaStream Recording API](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API), developers tend to direct people to native apps in iOS \ iPad case or use flash, in Edge on Windows 10 case.
