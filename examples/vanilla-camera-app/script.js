@@ -31,7 +31,7 @@
       .then(function(stream) {
         playStream(videoCameraElm, stream);
         /**
-         * Do whatever you want
+         * Do the recording same as above!
          **/
       })
       .catch(function(err) {
