@@ -1,6 +1,6 @@
 # MediaRecoder API Edge PWAs Polyfill
 
-## Demo of Vanilla JavaScript Example Recorderd in Edge
+<h5 align="center">Demo of The Vanilla JavaScript Camera App Example Recorderd in Edge</h5>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/zouhir/mediarecorder-polyfill/master/.github/demo1.PNG" width="80%">
